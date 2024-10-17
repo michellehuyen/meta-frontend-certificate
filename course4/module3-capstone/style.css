@@ -95,6 +95,10 @@ p { font-size: 1rem; }
     font-size: 2rem;
 }
 
+.copyright i {
+    padding-right: 10px;
+}
+
 @media screen and (max-width: 480px) {
     #home, #menu, #contact {
         padding: 30px;
