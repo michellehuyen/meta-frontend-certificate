@@ -13,22 +13,27 @@ const socials = [
   {
     icon: faEnvelope,
     url: "mailto: hello@example.com",
+    id: "envelope",
   },
   {
     icon: faGithub,
     url: "https://github.com",
+    id: "github",
   },
   {
     icon: faLinkedin,
     url: "https://www.linkedin.com",
+    id: "linkedin",
   },
   {
     icon: faMedium,
     url: "https://medium.com",
+    id: "medium",
   },
   {
     icon: faStackOverflow,
     url: "https://stackoverflow.com",
+    id: "stackoverflow",
   },
 ];
 
@@ -87,7 +92,7 @@ const Header = () => {
             <HStack spacing={8}>
               {/* Add social media links based on the `socials` data */}
               {socials.map((social) => (
-                <a href={social.url}>
+                <a key={social.id} href={social.url}>
                   <FontAwesomeIcon icon={social.icon} size="2x" />
                 </a>
               ))}
