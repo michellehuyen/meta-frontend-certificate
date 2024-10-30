@@ -9,6 +9,22 @@
 
 .hero h1 {
     color: #F4CE14;
+    font-size: 64px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 40%;
+}
+
+.title {
+    margin-bottom: 20px !important;
+}
+
+.hero h1, .hero h2 {
+    font-family: 'Markazi Text';
+    margin: 0;
 }
 
 .hero img {
