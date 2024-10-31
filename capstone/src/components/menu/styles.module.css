@@ -27,12 +27,14 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    padding: 0;
 }
 
 .menuItem {
     border: 1px solid black;
     border-radius: 16px;
     flex: 1;
+    list-style-type: none;
 }
 
 .menuItem img {

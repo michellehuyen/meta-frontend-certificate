@@ -26,7 +26,7 @@ const menuList = [
         img: lemonDessert,
         description: "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
     }
-]
+];
 
 const Menu = () => {
     return (
@@ -36,10 +36,10 @@ const Menu = () => {
                 <button type="button">Online Menu</button>
             </span>
 
-            <div className={styles.menuContainer}>
+            <ul className={styles.menuContainer}>
                 {menuList.map((menuItem) => {
                     return (
-                        <div key={menuItem.id} className={styles.menuItem}>
+                        <li key={menuItem.id} className={styles.menuItem}>
                             <img src={menuItem.img} alt={menuItem.name} />
                             <span className={styles.dishInfo}>
                                 <h2>{menuItem.name}</h2>
@@ -51,11 +51,11 @@ const Menu = () => {
                                 <p>Order a delivery</p>
                                 <img src={foodDelivery} alt="food delivery icon" style={{width: "25px", height: "25px"}} />
                             </span>
-                        </div>
+                        </li>
                     )
 
                 })}
-            </div>
+            </ul>
 
         </section>
     );

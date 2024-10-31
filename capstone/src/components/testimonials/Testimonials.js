@@ -1,17 +1,64 @@
 import styles from "./styles.module.css";
+import customer1 from "../../customerImg/customer1.jpeg";
+import customer2 from "../../customerImg/customer2.jpeg";
+import customer3 from "../../customerImg/customer3.jpeg";
+import customer4 from "../../customerImg/customer4.jpeg";
+import star from "../../icons_assets/star.svg";
 
 const rating = [
     {
-        rating: "",
-        name: "",
-        review: "",
+        id: customer1,
+        rating: 4,
+        name: "Anothony",
+        img: customer1,
+        review: "The food is delicious and the place has a very cozy and warm atmosphere!",
+    },
+    {
+        id: customer2,
+        rating: 3,
+        name: "Rebecca",
+        img: customer2,
+        review: "I had a lovely experience! The workers were very welcoming and the food was great.",
+    },
+    {
+        id: customer3,
+        rating: 4,
+        name: "Jordan",
+        img: customer3,
+        review: "The dishes were flavorful and delicious! Best Mediterranean food I've had in a while.",
+    },
+    {
+        id: customer4,
+        rating: 5,
+        name: "Tom",
+        img: customer4,
+        review: "This is my favorite spot! The staff is friendly, and the vareity of options on the mnu keep sme coming back!",
     }
-]
+];
 
 const Testimonials = () => {
     return (
         <section className={styles.testimonials}>
             <h1>TESTIMONIALS</h1>
+            <ul className={styles.reviewContainer}>
+                {rating.map((reviews) => {
+                    return (
+                        <li key={reviews.id} className={styles.reviewList}>
+                            {[...Array(reviews.rating)].map((_, index) => (
+                                <img key={index} src={star} alt="star icon" width="20px" height="20px" />
+                            ))}
+
+                            <div className={styles.descriptionContainer}>
+                                <img src={reviews.img} alt={reviews.name} width="auto" height="80px" />
+                                <span className={styles.textContainer}>
+                                    <h4>{reviews.name}</h4>
+                                    <p>{reviews.review}</p>
+                                </span>
+                            </div>
+                        </li>
+                    )
+                })}
+            </ul>
         </section>
     )
 }
