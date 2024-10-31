@@ -16,10 +16,7 @@
     font-size: 40px;
     font-weight: 100;
     line-height: 40%;
-}
-
-.title {
-    margin-bottom: 20px !important;
+    margin-bottom: 40px !important;
 }
 
 .hero h1, .hero h2 {
@@ -27,6 +24,9 @@
     margin: 0;
 }
 
-.hero img {
-    border-radius: 16px;
+.hero p {
+    font-family: 'Karla';
+    font-size: 16px;
 }
+
+.hero img { border-radius: 16px; }
