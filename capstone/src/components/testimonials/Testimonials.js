@@ -1,8 +1,8 @@
 import styles from "./styles.module.css";
-import customer1 from "../../customerImg/customer1.jpeg";
-import customer2 from "../../customerImg/customer2.jpeg";
-import customer3 from "../../customerImg/customer3.jpeg";
-import customer4 from "../../customerImg/customer4.jpeg";
+import customer1 from "../../peopleImg/customer1.jpeg";
+import customer2 from "../../peopleImg/customer2.jpeg";
+import customer3 from "../../peopleImg/customer3.jpeg";
+import customer4 from "../../peopleImg/customer4.jpeg";
 import star from "../../icons_assets/star.svg";
 
 const rating = [

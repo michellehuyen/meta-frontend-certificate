@@ -1,0 +1,26 @@
+.about h1 {
+    color: #F4CE14;
+    font-size: 64px;
+}
+
+.about h2 {
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 40%;
+    margin-bottom: 40px !important;
+}
+
+.about h1, .about h2 {
+    font-family: 'Markazi Text';
+    margin: 0;
+}
+
+.about {
+    background: #495E57;
+    padding: 40px 20px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
