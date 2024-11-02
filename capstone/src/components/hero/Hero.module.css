@@ -24,6 +24,8 @@
     margin: 0;
 }
 
+.hero p { padding-left: 0; }
+
 .hero img { border-radius: 16px; }
 
 .hero button {
@@ -32,4 +34,5 @@
     border-radius: 16px;
     padding: 10px 20px;
     font-size: 16px;
+    margin-top: 40px;
 }

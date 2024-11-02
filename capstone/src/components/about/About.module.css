@@ -24,3 +24,5 @@
     justify-items: center;
     align-items: center;
 }
+
+.about p { padding-left: 0; }

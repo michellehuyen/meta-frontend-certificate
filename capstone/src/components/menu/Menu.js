@@ -1,4 +1,4 @@
-import styles from "./styles.module.css";
+import styles from "./Menu.module.css";
 import greekSalad from "../../foodImg/greek_salad.jpg";
 import bruchetta from "../../foodImg/bruchetta.svg";
 import lemonDessert from "../../foodImg/lemon_dessert.jpg";
@@ -43,7 +43,7 @@ const Menu = () => {
                             <img src={menuItem.img} alt={menuItem.name} />
                             <span className={styles.dishInfo}>
                                 <h2>{menuItem.name}</h2>
-                                <span className={styles.price}>{menuItem.price}</span>
+                                <span className="price">{menuItem.price}</span>
                             </span>
                             <p>{menuItem.description}</p>
                             

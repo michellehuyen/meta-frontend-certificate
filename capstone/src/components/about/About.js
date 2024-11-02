@@ -1,4 +1,4 @@
-import styles from "./styles.module.css";
+import styles from "./About.module.css";
 import chefImgB from "../../peopleImg/chefs_B.jpg";
 
 const About = () => {

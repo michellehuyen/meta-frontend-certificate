@@ -1,24 +1,11 @@
-import About from "../about/About";
-import Hero from "../hero/Hero";
-import Menu from "../menu/Menu";
-import Testimonials from "../testimonials/Testimonials";
+import { Routes, Route } from 'react-router-dom';
+import Home from '../../pages/Home/Home';
 
 const Main = () => {
     return (
-        <main className="main">
-            <section id="home">
-                <Hero />
-            </section>
-
-            <section id="menu">
-                <Menu />
-            </section>
-
-            <section id="about">
-                <Testimonials />
-                <About />
-            </section>
-        </main>
+        <Routes>
+            <Route path="/" element={<Home />} />
+        </Routes>
     );
 }
 

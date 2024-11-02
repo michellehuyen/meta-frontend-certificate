@@ -1,4 +1,4 @@
-import styles from "./styles.module.css";
+import styles from "./Testimonials.module.css";
 import customer1 from "../../peopleImg/customer1.jpeg";
 import customer2 from "../../peopleImg/customer2.jpeg";
 import customer3 from "../../peopleImg/customer3.jpeg";

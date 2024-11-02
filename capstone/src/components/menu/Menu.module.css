@@ -10,7 +10,7 @@
     margin-bottom: 20px;
 }
 
-h1 {
+.menu h1 {
     margin: 0;
     font-size: 20px;
 }
@@ -45,7 +45,7 @@ h1 {
     object-fit: cover;
 }
 
-.dishInfo, .menuItem p {
+.dishInfo, p {
     padding: 10px 20px;
     margin: 0 !important;
 }
