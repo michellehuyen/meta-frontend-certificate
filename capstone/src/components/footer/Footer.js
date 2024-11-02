@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import logo from "../../icons_assets/footer_logo.png";
 
 const Footer = () => {
@@ -10,12 +10,12 @@ const Footer = () => {
             <div className={styles.footerCol}>
                 <h4>Navigation Links</h4>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="#about">About</Link></li>
-                    <li><Link to="#menu">Menu</Link></li>
-                    <li><Link to="/reservations">Reservations</Link></li>
-                    <li><Link to="/order-online">Order Online</Link></li>
-                    <li><Link to="/login">Login</Link></li>
+                    <li><HashLink to="/">Home</HashLink></li>
+                    <li><HashLink to="#about">About</HashLink></li>
+                    <li><HashLink to="#menu">Menu</HashLink></li>
+                    <li><HashLink to="/reservations">Reservations</HashLink></li>
+                    <li>Order Online</li>
+                    <li>Login</li>
                 </ul>
             </div>
 

@@ -5,7 +5,7 @@ import Testimonials from "../../components/Testimonials/Testimonials";
 
 const Home = () => {
     return (
-        <>
+        <main>
             <section id="home">
                 <Hero />
             </section>
@@ -18,7 +18,7 @@ const Home = () => {
                 <Testimonials />
                 <About />
             </section>
-        </>
+        </main>
     );
 }
 
