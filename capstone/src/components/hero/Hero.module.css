@@ -24,7 +24,16 @@
     margin: 0;
 }
 
-.hero p { padding-left: 0; }
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero p {
+    padding-left: 0;
+    padding-top: 0;
+}
 
 .hero img { border-radius: 16px; }
 

@@ -26,3 +26,9 @@
 }
 
 .about p { padding-left: 0; }
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

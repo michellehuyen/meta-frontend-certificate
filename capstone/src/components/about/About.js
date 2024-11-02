@@ -4,7 +4,7 @@ import chefImgB from "../../peopleImg/chefs_B.jpg";
 const About = () => {
     return (
         <section className={styles.about}>
-            <div>
+            <div className={styles.textContainer}>
                 <h1>Little Lemon</h1>
                 <h2>Chicago</h2>
 

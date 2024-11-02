@@ -5,7 +5,7 @@ import foodImg from "../../foodImg/restaurantfood.jpg";
 const Hero = () => {
     return (
         <section className={styles.hero}>
-            <div>
+            <div className={styles.textContainer}>
                 <h1>Little Lemon</h1>
                 <h2>Chicago</h2>
 
