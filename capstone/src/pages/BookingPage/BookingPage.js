@@ -1,7 +1,7 @@
 const BookingPage = () => {
     return (
         <>
-            <h1>Hello World!</h1>
+            <h1>This page is under construction</h1>
         </>
     );
 }
