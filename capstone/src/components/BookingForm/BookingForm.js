@@ -23,7 +23,7 @@ const BookingForm = ({ availableTimes, selectedDate, onDateChange, submitForm })
             guests: Yup.number().required("*Number of guests is required")
             .integer("*Number of guests must be an integer")
             .min(1, "*Number of guests must be at least 1")
-            .max(8, "*Max number of guests is 10")
+            .max(10, "*Max number of guests is 10")
     });
 
     const handleSubmit = (values) => {
@@ -37,38 +37,39 @@ const BookingForm = ({ availableTimes, selectedDate, onDateChange, submitForm })
     }
 
     return (
-        <section className={styles.formContainer}>
+        <section className={styles.form}>
             <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
-                <Form className={styles.form}>
+                <Form className={styles.formContainer}>
                     <h1>Reserve a Table</h1>
                     <div className={styles.nameContainer}>
                         <div className={styles.fieldContainer}>
                             <label htmlFor="firstName">First Name</label>
-                            <Field className={styles.field} id="firstName" type="text" name="firstName" />
+                            <Field className={styles.field} data-testid="firstName" id="firstName" type="text" name="firstName" />
                             <ErrorMessage name="firstName" component="div" className={styles.error} />
                         </div>
 
                         <div className={styles.fieldContainer}>
                             <label htmlFor="lastName">Last Name</label>
-                            <Field className={styles.field} id="lastName" type="text" name="lastName" />
+                            <Field className={styles.field} data-testid="lastName" id="lastName" type="text" name="lastName" />
                             <ErrorMessage name="lastName" component="div" className={styles.error} />
                         </div>
                     </div>
                     <div className={styles.fieldContainer}>
                         <label htmlFor="email">Email</label>
-                        <Field className={styles.field} id="email" type="email" name="email" />
+                        <Field className={styles.field} data-testid="email" id="email" type="email" name="email" />
                         <ErrorMessage name="email" component="div" className={styles.error} />
                     </div>
 
                     <div className={styles.fieldContainer}>
                         <label htmlFor="date">Choose a Date</label>
-                        <Field className={styles.field} id="date" type="date" name="date" value={selectedDate} onChange={handleDateChange} />
+                        <Field className={styles.field} data-testid="date" id="date" type="date" name="date" value={selectedDate} onChange={handleDateChange} />
                         <ErrorMessage name="date" component="div" className={styles.error} />
                     </div>
 
                     <div className={styles.fieldContainer}>
                         <label htmlFor="time">Choose a Time</label>
-                        <Field className={styles.field} id="time" as="select" name="time">
+                        <Field className={styles.field} data-testid="time" id="time" as="select" name="time">
+                            <option value="">Select a Time</option>
                             {availableTimes.map((times) => (
                                 <option key={times} value={times}>{times}</option>
                             ))}
@@ -78,13 +79,14 @@ const BookingForm = ({ availableTimes, selectedDate, onDateChange, submitForm })
 
                     <div className={styles.fieldContainer}>
                         <label htmlFor="guests">Number of Guests</label>
-                        <Field className={styles.field} id="guests" type="number" name="guests" min="1" max="10" />
+                        <Field className={styles.field} data-testid="guests" id="guests" type="number" name="guests" min="1" max="10" />
                         <ErrorMessage name="guests" component="div" className={styles.error} />
                     </div>
 
                     <div className={styles.fieldContainer}>
                         <label htmlFor="occasion">Occasion</label>
-                        <Field className={styles.field} id="occasion" as="select" name="occasion">
+                        <Field className={styles.field} data-testid="occasion" id="occasion" as="select" name="occasion">
+                            <option value="">Select an Occasion</option>
                             <option value="birthday">Birthday</option>
                             <option value="engagement">Engagement</option>
                             <option value="anniversary">Anniversary</option>
