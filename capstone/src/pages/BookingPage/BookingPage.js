@@ -4,10 +4,10 @@ import BookingForm from "../../components/BookingForm/BookingForm";
 
 export const initializeTimes = () => {
     // creating Date object for today's date
-    const today = new Date().toISOString().split('T')[0];
+    const today = new Date();
 
     return {
-        selectedDate: today,
+        selectedDate: today.toISOString().split('T')[0],
         availableTimes: fetchAPI(today) // fetch times
     };
 }
@@ -28,26 +28,34 @@ export const updateTimes = (state, action) => {
     }
 }
 
-export const fetchAPI = (date) => {
-    const result = [];
+const seededRandom = function (seed) {
+    var m = 2**35 - 31;
+    var a = 185852;
+    var s = seed % m;
+    return function () {
+        return (s = s * a % m) / m;
+    };
+};
 
-    for (let i = 10; i <= 20; i++) {
-        if (Math.random() < 0.5) {
-            result.push(`${i}:00`);
+export const fetchAPI = function(date) {
+    let result = [];
+    let random = seededRandom(date.getDate());
+
+    for(let i = 17; i <= 23; i++) {
+        if(random() < 0.5) {
+            result.push(i + ':00');
         }
-        if (Math.random() < 0.5) {
-            result.push(`${i}:30`);
+        if(random() < 0.5) {
+            result.push(i + ':30');
         }
     }
-    return result
-}
+    return result;
+};
 
-export const submitAPI = (formData) => {
-    if (!formData.firstName || !formData.lastName || !formData.email || !formData.time || !formData.occasion) {
-        return false;
-    }
+export const submitAPI = function(formData) {
+    if (!formData) return false;
     return true;
-}
+};
 
 const BookingPage = () => {
     const [state, dispatch] = useReducer(updateTimes, initializeTimes());
