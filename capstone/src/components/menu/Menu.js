@@ -32,29 +32,27 @@ const Menu = () => {
     return (
         <section className={styles.menu}>
             <span className={styles.sectionTitle}>
-                <h1>THIS WEEKS SPECIAL!</h1>
+                <h3>THIS WEEKS SPECIAL!</h3>
                 <button type="button">Online Menu</button>
             </span>
 
             <ul className={styles.menuContainer}>
-                {menuList.map((menuItem) => {
-                    return (
-                        <li key={menuItem.id} className={styles.menuItem}>
-                            <img src={menuItem.img} alt={menuItem.name} />
-                            <span className={styles.dishInfo}>
-                                <h2>{menuItem.name}</h2>
-                                <span className="price">{menuItem.price}</span>
-                            </span>
-                            <p>{menuItem.description}</p>
-                            
-                            <span className={styles.deliveryText}>
-                                <p>Order a delivery</p>
-                                <img src={foodDelivery} alt="food delivery icon" style={{width: "25px", height: "25px"}} />
-                            </span>
-                        </li>
-                    )
+                {menuList.map((menuItem) => (
+                    <li key={menuItem.id} className={styles.menuItem}>
+                        <img src={menuItem.img} alt={menuItem.name} />
+                        <span className={styles.dishInfo}>
+                            <h2>{menuItem.name}</h2>
+                            <span className="price">{menuItem.price}</span>
+                        </span>
+                        <p>{menuItem.description}</p>
+                        
+                        <span className={styles.deliveryText}>
+                            <p>Order a delivery</p>
+                            <img src={foodDelivery} alt="food delivery icon" style={{width: "25px", height: "25px"}} />
+                        </span>
+                    </li>
 
-                })}
+                ))}
             </ul>
 
         </section>

@@ -39,25 +39,23 @@ const rating = [
 const Testimonials = () => {
     return (
         <section className={styles.testimonials}>
-            <h1>TESTIMONIALS</h1>
+            <h3>TESTIMONIALS</h3>
             <ul className={styles.reviewContainer}>
-                {rating.map((reviews) => {
-                    return (
-                        <li key={reviews.id} className={styles.reviewList}>
-                            {[...Array(reviews.rating)].map((_, index) => (
-                                <img key={index} src={star} alt="star icon" width="20px" height="20px" />
-                            ))}
+                {rating.map((reviews) => (
+                    <li key={reviews.id} className={styles.reviewList}>
+                        {[...Array(reviews.rating)].map((_, index) => (
+                            <img key={index} src={star} alt="star icon" width="20px" height="20px" />
+                        ))}
 
-                            <div className={styles.descriptionContainer}>
-                                <img src={reviews.img} alt={reviews.name} width="auto" height="80px" />
-                                <span className={styles.textContainer}>
-                                    <h4>{reviews.name}</h4>
-                                    <p>{reviews.review}</p>
-                                </span>
-                            </div>
-                        </li>
-                    )
-                })}
+                        <div className={styles.descriptionContainer}>
+                            <img src={reviews.img} alt={reviews.name} width="auto" height="80px" />
+                            <span className={styles.textContainer}>
+                                <h4>{reviews.name}</h4>
+                                <p>{reviews.review}</p>
+                            </span>
+                        </div>
+                    </li>
+                ))}
             </ul>
         </section>
     )

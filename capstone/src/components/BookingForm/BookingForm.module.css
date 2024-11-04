@@ -1,0 +1,54 @@
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #495E57;
+    width: 50vw;
+    min-height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+    padding: 30px 0;
+}
+
+.fieldContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    position: relative;
+    max-width: 100%;
+}
+
+.form {
+    width: 35vw;
+}
+
+.nameContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.fieldContainer label {
+    color: white;
+    padding-bottom: 5px;
+}
+
+.field {
+    padding: 5px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.error {
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    padding: 5px;
+    margin-top: 5px;
+    background: rgba(255, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+    font-size: 0.9em;
+    color: white;
+}

@@ -1,7 +1,4 @@
-.testimonials h1 {
-    text-align: center;
-    font-family: 'Karla';
-}
+.testimonials h3 { text-align: center; }
 
 .reviewContainer {
     display: flex;

@@ -5,7 +5,9 @@ import logo from "../../icons_assets/Logo.svg";
 const Nav = () => {
     return (
         <nav className={styles.nav}>
-            <img src={logo} alt="Little Lemon Logo" />
+            <HashLink to="/">
+                <img src={logo} alt="Little Lemon Logo" />
+            </HashLink>
             <ul className={styles.ul}>
                 <li><HashLink to="/">Home</HashLink></li>
                 <li><HashLink to="/#about">About</HashLink></li>

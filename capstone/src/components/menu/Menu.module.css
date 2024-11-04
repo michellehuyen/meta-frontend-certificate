@@ -10,18 +10,7 @@
     margin-bottom: 20px;
 }
 
-.menu h1 {
-    margin: 0;
-    font-size: 20px;
-}
-
-.menu button {
-    background-color: #F4CE14;
-    border: 1px solid #F4CE14;
-    border-radius: 16px;
-    padding: 10px 20px;
-    font-size: 16px;
-}
+.menu h3 { margin: 0; }
 
 .menuContainer {
     display: flex;

@@ -7,23 +7,6 @@
     justify-items: center;
 }
 
-.hero h1 {
-    color: #F4CE14;
-    font-size: 64px;
-}
-
-.hero h2 {
-    font-size: 40px;
-    font-weight: 100;
-    line-height: 40%;
-    margin-bottom: 40px !important;
-}
-
-.hero h1, .hero h2 {
-    font-family: 'Markazi Text';
-    margin: 0;
-}
-
 .textContainer {
     display: flex;
     flex-direction: column;
@@ -37,11 +20,4 @@
 
 .hero img { border-radius: 16px; }
 
-.hero button {
-    background-color: #F4CE14;
-    border: 1px solid #F4CE14;
-    border-radius: 16px;
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-top: 40px;
-}
+.hero button { margin-top: 40px; }
