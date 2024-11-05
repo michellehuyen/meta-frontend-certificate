@@ -44,13 +44,13 @@ const Testimonials = () => {
                 {rating.map((reviews) => (
                     <li key={reviews.id} className={styles.reviewList}>
                         {[...Array(reviews.rating)].map((_, index) => (
-                            <img key={index} src={star} alt="star icon" width="20px" height="20px" />
+                            <img key={index} src={star} alt="star icon" className={styles.starIcon} width="20px" height="20px" />
                         ))}
 
                         <div className={styles.descriptionContainer}>
                             <img src={reviews.img} alt={reviews.name} width="auto" height="80px" />
                             <span className={styles.textContainer}>
-                                <h4>{reviews.name}</h4>
+                                <h6>{reviews.name}</h6>
                                 <p>{reviews.review}</p>
                             </span>
                         </div>

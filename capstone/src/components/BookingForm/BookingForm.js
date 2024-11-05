@@ -44,31 +44,31 @@ const BookingForm = ({ availableTimes, selectedDate, onDateChange, submitForm })
                     <div className={styles.nameContainer}>
                         <div className={styles.fieldContainer}>
                             <label htmlFor="firstName">First Name</label>
-                            <Field className={styles.field} data-testid="firstName" id="firstName" type="text" name="firstName" />
+                            <Field className={styles.field} data-testid="firstName" id="firstName" type="text" name="firstName" aria-label="First Name" aria-required="true" />
                             <ErrorMessage name="firstName" component="div" className={styles.error} />
                         </div>
 
                         <div className={styles.fieldContainer}>
                             <label htmlFor="lastName">Last Name</label>
-                            <Field className={styles.field} data-testid="lastName" id="lastName" type="text" name="lastName" />
+                            <Field className={styles.field} data-testid="lastName" id="lastName" type="text" name="lastName" aria-label="Last Name" aria-required="true" />
                             <ErrorMessage name="lastName" component="div" className={styles.error} />
                         </div>
                     </div>
                     <div className={styles.fieldContainer}>
                         <label htmlFor="email">Email</label>
-                        <Field className={styles.field} data-testid="email" id="email" type="email" name="email" />
+                        <Field className={styles.field} data-testid="email" id="email" type="email" name="email" aria-label="Email" aria-required="true" />
                         <ErrorMessage name="email" component="div" className={styles.error} />
                     </div>
 
                     <div className={styles.fieldContainer}>
                         <label htmlFor="date">Choose a Date</label>
-                        <Field className={styles.field} data-testid="date" id="date" type="date" name="date" value={selectedDate} onChange={handleDateChange} />
+                        <Field className={styles.field} data-testid="date" id="date" type="date" name="date" aria-label="Reservation Date" value={selectedDate} onChange={handleDateChange} />
                         <ErrorMessage name="date" component="div" className={styles.error} />
                     </div>
 
                     <div className={styles.fieldContainer}>
                         <label htmlFor="time">Choose a Time</label>
-                        <Field className={styles.field} data-testid="time" id="time" as="select" name="time">
+                        <Field className={styles.field} data-testid="time" id="time" as="select" name="time" aria-label="Reservation Time">
                             <option value="">Select a Time</option>
                             {availableTimes.map((times) => (
                                 <option key={times} value={times}>{times}</option>
@@ -79,23 +79,23 @@ const BookingForm = ({ availableTimes, selectedDate, onDateChange, submitForm })
 
                     <div className={styles.fieldContainer}>
                         <label htmlFor="guests">Number of Guests</label>
-                        <Field className={styles.field} data-testid="guests" id="guests" type="number" name="guests" min="1" max="10" />
+                        <Field className={styles.field} data-testid="guests" id="guests" type="number" name="guests" aria-label="Number of Guests" min="1" max="10" aria-valuemin="1" aria-valuemax="10" />
                         <ErrorMessage name="guests" component="div" className={styles.error} />
                     </div>
 
                     <div className={styles.fieldContainer}>
                         <label htmlFor="occasion">Occasion</label>
-                        <Field className={styles.field} data-testid="occasion" id="occasion" as="select" name="occasion">
+                        <Field className={styles.field} data-testid="occasion" id="occasion" as="select" name="occasion" aria-label="Occasion" aria-required="true">
                             <option value="">Select an Occasion</option>
-                            <option value="birthday">Birthday</option>
-                            <option value="engagement">Engagement</option>
-                            <option value="anniversary">Anniversary</option>
-                            <option value="other">Other</option>
+                            <option value="Birthday">Birthday</option>
+                            <option value="Engagement">Engagement</option>
+                            <option value="Anniversary">Anniversary</option>
+                            <option value="Other">Other</option>
                         </Field>
                         <ErrorMessage name="occasion" component="div" className={styles.error} />
                     </div>
 
-                    <button type="submit">Make Your Reservation</button>
+                    <button type="submit" aria-label="Make Your Reservation">Make Your Reservation</button>
                 </Form>
             </Formik>
         </section>

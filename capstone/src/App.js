@@ -1,13 +1,18 @@
 import { BrowserRouter as Router } from 'react-router-dom';
+
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './styles/bootstrap-custom.scss';
+import 'bootstrap/scss/bootstrap.scss';
 import './App.css';
-import Nav from './components/Nav/Nav';
+
 import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <Router>
-      <Nav />
+      <Header />
       <Main />
       <Footer />
     </Router>

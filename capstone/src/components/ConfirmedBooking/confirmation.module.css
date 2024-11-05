@@ -1,6 +1,60 @@
-.confirmation {
+.confirmation, .bookingDetailsContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    background: #495E57;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.confirmation {
+    background: var(--primary-color);
+    padding: 40px 10px;
+}
+
+.confirmation h2 {
+    color: rgb(255, 255, 255);
+}
+
+.bookingDetailsContainer {
+    background: rgb(255, 255, 255);
     padding: 20px;
+    border-radius: 16px;
+    width: 30vw;
+}
+
+.bookingList {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    width: 20vw;
+}
+
+.bookingList li {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.dataContent {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .bookingDetailsContainer { width: 100%; }
+
+    .confirmation h1 { font-size: 45px; }
+
+    .confirmation h2 { font-size: 30px; }
+
+    .confirmation h1, .confirmation h2 {
+        text-align: center;
+        line-height: 80%;
+    }
+
+    .bookingList {
+        width: 100%;
+        padding: 0px 15px;
+    }
 }

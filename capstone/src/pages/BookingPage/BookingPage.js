@@ -72,7 +72,7 @@ const BookingPage = () => {
         const isSubmitted = submitAPI(formData);
         if (isSubmitted) {
             console.log(formData);
-            navigate("/booking-confirmation");
+            navigate("/booking-confirmation", { state: formData });
         }
     }
 

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background: #495E57;
+    background: var(--primary-color);
     width: 50vw;
     min-height: 70vh;
     margin-left: auto;
@@ -51,4 +51,26 @@
     transition: opacity 0.3s ease;
     font-size: 0.9em;
     color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .form {
+        width: 100%;
+        padding: 20px 0;
+        border-radius: 0;
+    }
+
+    .formContainer {
+        width: 90%;
+    }
+
+    .field {
+        padding: 3px 5px;
+    }
+
+    .fieldContainer {
+        margin: 8px 0;
+    }
+
+    .formContainer button { margin-top: 10px; }
 }

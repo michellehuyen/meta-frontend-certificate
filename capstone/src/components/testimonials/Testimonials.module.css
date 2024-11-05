@@ -38,3 +38,10 @@
     margin-left: 10px;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 480px) {
+    .starIcon {
+        width: 12px;
+        height: 12px;
+    }
+}
