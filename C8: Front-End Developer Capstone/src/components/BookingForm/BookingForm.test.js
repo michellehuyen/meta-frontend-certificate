@@ -84,12 +84,6 @@ describe("BookingForm", () => {
         // check to see if availableTimes is an array and the length of it is > 0
         expect(Array.isArray(initialDate.availableTimes)).toBe(true);
         expect(initialDate.availableTimes.length).toBeGreaterThan(0);
-
-        // loop through availableTimes to make sure it contains valid time strings
-        // initialDate.availableTimes.forEach(time => {
-        //     const isValidTime = /^(1[0-9]|[1-9]):[0-5][0-9]$/.test(time);
-        //     expect(isValidTime).toBe(true);
-        // })
     })
 
     test('updateTimes return the correct expected value', () => {
@@ -118,11 +112,4 @@ describe("BookingForm", () => {
         const result = submitAPI(formData);
         expect(result).toBe(true);
     })
-
-    // test('submitAPI returns false when data is empty', () => {
-    //     const formData = {}
-
-    //     const result = submitAPI(formData);
-    //     expect(result).toBe(false);
-    // })
 })
