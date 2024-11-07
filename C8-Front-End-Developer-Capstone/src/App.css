@@ -15,14 +15,9 @@ h1 {
   font-size: 64px;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Markazi Text';
   margin: 0;
-}
-
-h3 {
-  font-family: 'Karla';
-  font-size: 20px;
 }
 
 p {
@@ -60,6 +55,7 @@ h2 {
   button {
     padding: 5px 10px;
     font-size: 0.8em;
+    color: black;
   }
 
   #reserveBtn {

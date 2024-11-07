@@ -61,6 +61,7 @@
 
 @media screen and (max-width: 480px) {
     .menuContainer {
+        flex-direction: column;
         width: 100%;
     }
 }
