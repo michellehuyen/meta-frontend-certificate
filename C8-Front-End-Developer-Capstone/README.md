@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Reserve a Table with Little Lemon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
+This capstone project demonstrates the skills and knowledge I have gained throughout the **Meta Front-End Developer Specialization Program**.
 
-## Available Scripts
+### **Desktop View of the Homepage**
+<img src='./projectImgs/DesktopViewHomepage.png' alt ="Desktop view of the homepage" width='600px' />
 
-In the project directory, you can run:
+### **Mobile View of the Homepage**
 
-### `npm start`
+<img src='./projectImgs/MobileViewHomepage.jpeg' alt ="Desktop view of the homepage" height='600px' />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The goal of this project is to develop an online table reservation feature for the fictional Little Lemon restaurant website, to allow customers to easily reserve tables based on their preferred date, time, and party size. By providing customers with a simple and intuitive interface for making reservations, this feature aims to increase customer satisfaction while improving the efficiency of the restaurant's operations.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Key Features
+### Responsive Design
+The project is designed to adapt to different screen sizes and devices to provide users with a seamless experience
 
-### `npm test`
+### Customer Reservation System
+Allows customers to select the date, time, and the number of guests for to reserve a table
+#### **Desktop View of the Reservation Form**
+<img src='./projectImgs/DesktopViewReservation.png' alt ="Desktop view of the reservation form" width='600px' />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### **Mobile View of the Reservation Form**
+<img src='./projectImgs/MobileViewReservation.jpg' alt ="Mobile view of the reservation form" height='600px' />
 
-### `npm run build`
+### Form Data Handling
+Utilizes **Formik** to manage the reservation form's state, handle form submission, and capture user inputs
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Form Data Validation
+**Yup** is used to validate all form inputs to ensure that all required fields are filled out properly
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
+- **Front-end**
+  - **React:** Created the UI with reusable components. Components were used to organize the different pages and sections of the website
+  - **Bootstrap:** Used specifically to create a responsive and mobile-friendly navbar
+  - **Formik:** Used to handle form state and submission for the reservation form
+  - **Yup:** Used to validate reservation form inputs. If any required fields are left empty or incorrectly filled out, **Yup** generates error messages to guide users
+- **Testing**
+  - **Jest:** Used for unit and integration testing to ensure the app behaves as expected.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation Instructions
+### 1. Clone this entire repository
+Since this project is a subdirectory of this repository, you'll need to clone the entire repository first
+```bash
+git clone git@github.com:michellehuyen/meta-frontend-certificate.git
+```
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 2. Navigate to the project directory
+After cloning the repository, navigate to the subdirectory containing the capstone project
+```bash
+cd C8-Front-End-Developer-Capstone/
+```
+### 3. Install all required dependencies
+Make sure you are inside the C8-Front-End-Developer-Capstone/ directory, then run:
+```bash
+npm i
+```
