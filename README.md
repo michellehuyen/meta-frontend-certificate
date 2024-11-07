@@ -1,42 +1,36 @@
 # Meta Front-End Developer Specialization Certificate
 <img src='./Meta-Front-End-Developer-Certificate.jpg' alt="Image of Michelle Nguyen's Meta Front-End Developer Certificate" />
 
+## Overview
+I recently completed the **Meta Front-End Developer Specialization Certificate by Meta on Coursera**.
+
 ## Courses Completed
-<ol>
-    <li>Introduction to Front-End Development</li>
-    <li>Programming with JavaScript</li>
-    <li>Version Control</li>
-    <li>HTML and CSS in depth</li>
-    <li>React Basics</li>
-    <li>Advanced React</li>
-    <li>Principles of UX/UI Design</li>
-    <li>Front-End Developer Capstone</li>
-    <li>Coding Interview Preparation</li>
-</ol>
+This specialization consists of the following courses:
+1. Introduction to Front-End Development
+2. Programming with JavaScript
+3. Version Control
+4. HTML and CSS in depth
+5. React Basics
+6. Advanced React
+7. Principles of UX/UI Design
+8. Front-End Developer Capstone
+9. Coding Interview Preparation
 
 ## Technologies and Tools Used
 ### Languages
-<ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-</ul>
+- HTML
+- CSS
+- JavaScript
 
 ### Libraries/Frameworks
-<ul>
-    <li>React</li>
-    <li>Bootstrap</li>
-</ul>
+- React
+- Bootstrap
 
 ### Version Control
-<ul>
-    <li>Git</li>
-    <li>GitHub</li>
-</ul>
+- Git
+- GitHub
 
 ### Tools
-<ul>
-    <li>VS Code</li>
-    <li>Figma for UI/UX Design</li>
-    <li>Jest for running unit tests</li>
-</ul>
+- VS Code
+- Figma
+- Jest
