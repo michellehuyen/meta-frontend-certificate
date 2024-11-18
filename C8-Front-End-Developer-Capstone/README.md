@@ -3,18 +3,18 @@
 ## Project Overview
 This capstone project demonstrates the skills and knowledge I have gained throughout the **Meta Front-End Developer Specialization Program**.
 
+The goal of this project is to develop an online table reservation feature for the fictional Little Lemon restaurant website, to allow customers to easily reserve tables based on their preferred date, time, and party size. By providing customers with a simple and intuitive interface for making reservations, this feature aims to increase customer satisfaction while improving the efficiency of the restaurant's operations.
+
+## Key Features
+### Responsive Design
+The project is designed to adapt to different screen sizes and devices to provide users with a seamless experience
+
 ### **Desktop View of the Homepage**
 <img src='./projectImgs/DesktopViewHomepage.png' alt ="Desktop view of the homepage" width='600px' />
 
 ### **Mobile View of the Homepage**
 
 <img src='./projectImgs/MobileViewHomepage.jpeg' alt ="Desktop view of the homepage" height='600px' />
-
-The goal of this project is to develop an online table reservation feature for the fictional Little Lemon restaurant website, to allow customers to easily reserve tables based on their preferred date, time, and party size. By providing customers with a simple and intuitive interface for making reservations, this feature aims to increase customer satisfaction while improving the efficiency of the restaurant's operations.
-
-## Key Features
-### Responsive Design
-The project is designed to adapt to different screen sizes and devices to provide users with a seamless experience
 
 ### Customer Reservation System
 Allows customers to select the date, time, and the number of guests for to reserve a table
